@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity() {
         val sunAnim = ObjectAnimator.ofFloat(binding.sun, View.TRANSLATION_Y, -1600f)
         sunAnim.duration = 4500
 
+        binding.night?.alpha = 1f ////Чтобы сначала была ночь
         val nightAnim = ObjectAnimator.ofFloat(binding.night, View.ALPHA, 0f)
         nightAnim.duration = 4500
 
